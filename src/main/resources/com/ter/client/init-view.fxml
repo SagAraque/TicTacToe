@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="400.0" maxWidth="350.0" minHeight="400.0" minWidth="350.0" prefHeight="400.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ter.client.InitController">
+   <children>
+      <ImageView fitHeight="112.0" fitWidth="40.0" layoutX="175.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="305.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="135.0" AnchorPane.topAnchor="56.0">
+         <image>
+            <Image url="@circle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="40.0" layoutX="120.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="305.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="56.0">
+         <image>
+            <Image url="@cross.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="35.0" layoutY="96.0" prefHeight="42.0" prefWidth="260.0" text="Tres en raya" textAlignment="CENTER" textFill="#135ea2">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="initButton" layoutX="110.0" layoutY="295.0" mnemonicParsing="false" onAction="#initGame" prefHeight="27.0" prefWidth="131.0" stylesheets="@style.css" text="Buscar partida" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ProgressIndicator fx:id="progress" layoutX="149.0" layoutY="174.0" visible="false" AnchorPane.bottomAnchor="173.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="149.0" AnchorPane.topAnchor="174.0" />
+   </children>
+</AnchorPane>
